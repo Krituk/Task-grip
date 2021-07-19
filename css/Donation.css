@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    
+}
+
+.fullContainer{
+    width: 100%;
+}
+.container{
+    width:1140px;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+header.container .logo2 {
+    padding: 15px 0;
+    height:75px;
+}
+
+header .container .logo2 img{
+    height: 100px;
+    position: fixed;
+    float: left;
+    margin-left: auto;
+    left:0px;
+    top: 0px;
+}
+
+
+
+nav {
+    height: 12vh;
+    background-color: #000;
+    width: 100%;
+    top: 0px;
+    padding:15px;
+    position: fixed;
+    z-index: 2;
+    left: 100px;
+
+}
+.nav-links{
+    display: flex;
+    width: 100%; 
+    justify-content: space-around;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 16px;
+    top: 0px;
+
+}
+.nav-links  li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 25px;
+    color:#e43;
+    display: flex;
+    justify-content: space-between;
+    left:23px
+    
+}
+.nav-links li a:hover{
+    background-color: #f39d1a;
+}
+@media  screen and (max-width:768px){
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background:#e43a47;
+        margin: 5px;
+
+    }
+    nav{
+        position: relative;
+    }
+
+.hamburger{
+        position: absolute;
+        cursor: pointer;
+        right:5%;
+        top:70%;
+        transform: translate(-5%, -50%);
+    }
+.nav-links {
+        position: fixed;
+        background: #efefef;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+}   
+
+
+.donation-page {
+    background-image: url("money.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width:100%;
+    background-attachment: fixed;
+
+}
+.donation-page h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color:gold;
+}
+
+.form heading {
+    font-size: 2px;
+    font-weight: 100;
+    padding-top: 170px;
+    width:55%;
+    color:peru;
+    font-family: sans-serif;
+     
+}
+
+.discription{
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    width: 900px;
+    height: 500px;
+    padding: 40px 0;
+    text-align: center;
+    background-color:#00000096;
+    font: weight 850px;
+    
+    color:seashell;
+    margin-top: 70 px;
+    border-radius: 20px;
+    background-image: url("images/money.jpg");
+} 
+
+.discription h3{
+    padding: 0 8%;
+    font-family: merienda;
+}
+
+
+.payment {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+
+}
+@media only screen and(max-width:800px){
+    .discription{
+        width:80%;
+    }
+}
